@@ -147,7 +147,7 @@ body {
       font-size: 30px; }
 
 .page {
-  background: #B3DAF5;
+  background: linear-gradient(to bottom left, #B3DAF5, #067394);
   padding: 10px 50px;
   text-align: left;
   color: #032F3D; }
@@ -172,54 +172,169 @@ body {
     .page fieldset legend {
       width: inherit;
       padding: 0 10px;
-      border-bottom: none; }
+      border-bottom: none;
+      color: #032F3D; }
 
-.page1 img {
-  height: 50px;
-  display: inline-block;
-  padding: 0 0 5px 5px; }
-.page1 .big {
-  height: 65px; }
-.page1 .small {
-  height: 40px; }
-.page1 .very-small {
-  height: 20px;
-  margin-top: 20px; }
+.page1 {
+  background: linear-gradient(to bottom left, #B3DAF5, #067394); }
+  .page1 img {
+    height: 50px;
+    display: inline-block;
+    padding: 0 0 5px 5px; }
+  .page1 .big {
+    height: 65px; }
+  .page1 .small {
+    height: 40px; }
+  .page1 .very-small {
+    height: 20px;
+    margin-top: 20px; }
 
-.page2 {
-  background: #B3CEF5; }
-  .page2 .nav-tabs {
-    background: #04556E;
-    color: #fff;
-    width: 400px; }
-    .page2 .nav-tabs .active {
-      background: #032F3D;
-      border: none;
-      border-bottom: 3px solid red; }
+.page2 .nav-tabs {
+  background: transparent;
+  color: #fff;
+  width: 310px;
+  border: none; }
+  .page2 .nav-tabs * {
+    color: #fff; }
+  .page2 .nav-tabs li a {
+    background: #04556E; }
+    .page2 .nav-tabs li a:hover {
+      background: #CC1E41; }
+  .page2 .nav-tabs li.active a {
+    background: #032F3D;
+    border: none;
+    border-bottom: 4px solid #CC1E41;
+    color: #fff; }
+.page2 .glyphicon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  background: #CC1E41;
+  line-height: 40px; }
+.page2 .glyphicon-chevron-left {
+  left: 15px; }
+.page2 .glyphicon-chevron-right {
+  right: 15px; }
+.page2 .carousel-indicators {
+  bottom: 0; }
+  .page2 .carousel-indicators li {
+    border-color: #CC1E41; }
+  .page2 .carousel-indicators .active {
+    background: #CC1E41; }
+.page2 .carousel-control {
+  background: transparent;
+  opacity: 0.8; }
+  .page2 .carousel-control:hover {
+    opacity: 1; }
+.page2 .carousel-caption {
+  top: -20px;
+  width: 80%;
+  margin-left: -10%; }
+  .page2 .carousel-caption fieldset {
+    padding: 0 30px 20px;
+    border: 3px solid #CC1E41;
+    border-radius: 20px;
+    text-align: left; }
+    .page2 .carousel-caption fieldset legend {
+      color: #CC1E41;
+      font-size: 2.5vw; }
+  .page2 .carousel-caption .col {
+    position: relative;
+    overflow: hidden;
+    height: 22vw;
+    padding: 0; }
+    .page2 .carousel-caption .col .mockup {
+      background-position: center;
+      height: 22vw;
+      width: 100%;
+      z-index: 3;
+      background-size: cover; }
+    .page2 .carousel-caption .col .layer {
+      height: 22vw;
+      z-index: 2;
+      width: 100%;
+      position: absolute;
+      top: 22vw;
+      text-align: center; }
+      .page2 .carousel-caption .col .layer .ico {
+        margin-top: 100px; }
+        .page2 .carousel-caption .col .layer .ico a {
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          margin: 0 10px;
+          line-height: 90px;
+          border: 3px solid #CC1E41; }
+          .page2 .carousel-caption .col .layer .ico a:hover {
+            background: #fff;
+            transition: 0.4s; }
+          .page2 .carousel-caption .col .layer .ico a:hover .fa {
+            color: #CC1E41;
+            transition: 0.4s; }
+          .page2 .carousel-caption .col .layer .ico a .fa {
+            color: #fff;
+            font-size: 50px; }
+    .page2 .carousel-caption .col:hover .layer {
+      top: 0;
+      background: rgba(179, 218, 245, 0.6);
+      transition: top 0.5s ease-in; }
+  .page2 .carousel-caption .description {
+    padding: 0 10px; }
+    .page2 .carousel-caption .description img {
+      width: 35px; }
+    .page2 .carousel-caption .description .big {
+      width: 85px; }
+    .page2 .carousel-caption .description p {
+      font-size: 18px;
+      color: #CC1E41; }
+    .page2 .carousel-caption .description span {
+      margin-bottom: 15px;
+      display: block; }
 
-.page3 {
-  background: #B3C4F5; }
-  .page3 textarea, .page3 input {
-    resize: none;
-    background: #cddeff; }
-  .page3 button {
-    background: #04556E;
-    border: 1px solid #04556E;
-    color: #fff;
-    display: block;
-    font-size: 1em;
-    height: 40px;
-    line-height: 30px;
-    margin: 40px auto 20px;
-    outline: 1px solid #04556E;
-    outline-offset: 0;
-    text-transform: uppercase;
-    padding: 0 15px; }
-    .page3 button:hover {
-      box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5), 0 0 20px rgba(60, 60, 60, 0.2);
-      outline-color: #B3C4F5;
-      outline-offset: 15px;
-      transition: 0.5s; }
+.mockup-1 {
+  background-image: url("../images/Awax.png"); }
+
+.mockup-2 {
+  background-image: url("../images/Mache.png"); }
+
+.mockup-3 {
+  background-image: url("../images/Golden.png"); }
+
+.mockup-4 {
+  background-image: url("../images/PhotoApp.png"); }
+
+.mockup-5 {
+  background-image: url("../images/sudoku.png"); }
+
+.mockup-6 {
+  background-image: url("../images/tic.png"); }
+
+.mockup-7 {
+  background-image: url("../images/papier.png"); }
+
+.mockup-8 {
+  background-image: url("../images/guess.png"); }
+
+.page3 textarea, .page3 input {
+  resize: none;
+  background: #B3DAF5; }
+.page3 button {
+  background: #04556E;
+  border: 1px solid #04556E;
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  height: 40px;
+  line-height: 30px;
+  margin: 40px auto 20px;
+  text-transform: uppercase;
+  padding: 0 15px; }
+  .page3 button:hover {
+    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5), 0 0 20px rgba(60, 60, 60, 0.2);
+    transform: scale(1.2);
+    transition: 0.5s; }
 
 @media (max-width: 1576px) {
   .menu {
