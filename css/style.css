@@ -1,0 +1,98 @@
+body {
+  background: #E2E4E7;
+  padding: 0;
+  text-align: center;
+  font-family: 'open sans';
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+.wrapper {
+  height: 100% !important;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 75%;
+  float: left;
+  background: #fff; }
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto; }
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  font-size: 13px;
+  color: #000;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; }
+
+.back:hover {
+  color: black;
+  background: rgba(255, 255, 255, 0.5); }
+
+.menu {
+  background: #067394;
+  height: 100vh;
+  color: #fff;
+  padding: 7vh 30px;
+  width: 25%;
+  float: right; }
+  .menu h1 {
+    line-height: 10px;
+    display: inline-block;
+    padding: 0 5px; }
+  .menu h3 {
+    margin: 4.8vh auto; }
+  .menu h4 {
+    margin-top: 4.8vh; }
+  .menu .photo {
+    background-image: url("../images/face.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 3vh;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 5px #fff; }
+  .menu button {
+    display: block;
+    margin: 10px auto;
+    width: 13vw;
+    height: 5.5vh;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: #fff; }
+  .menu .social a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 10px;
+    line-height: 55px; }
+    .menu .social a:hover {
+      background: #fff;
+      transition: 0.4s; }
+    .menu .social a:hover .fa {
+      color: #CC1E41;
+      transition: 0.4s; }
+    .menu .social a .fa {
+      color: #fff;
+      font-size: 30px; }
+
+/*# sourceMappingURL=style.css.map */
