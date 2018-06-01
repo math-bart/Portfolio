@@ -53,9 +53,10 @@ body {
 	background: #067394;
 	height: 100vh;
 	color: #fff;
-	padding: 7vh 30px;
+	padding: 9vh 30px;
 	width: 25%;
 	float: right;
+	position: relative;
 	h1 {
 		line-height: 10px;
 		display: inline-block;
@@ -81,11 +82,16 @@ body {
 	button {
 		display: block;
 		margin: 10px auto;
-		width: 13vw;
+		width: 17vw;
 		height: 5.5vh;
 		background: rgba(0,0,0,0.1);
 		border-radius: 20px;
 		color: #fff;
+		&:hover {
+			background: #fff;
+			color: #067394;
+			transition: 1s;
+		}
 	}
 	.social {
 		a {
@@ -109,5 +115,11 @@ body {
 				font-size: 30px;
 			}
 		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.menu {
+		padding: 7vh 30px;
 	}
 }

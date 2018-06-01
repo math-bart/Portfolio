@@ -49,9 +49,10 @@ body {
   background: #067394;
   height: 100vh;
   color: #fff;
-  padding: 7vh 30px;
+  padding: 9vh 30px;
   width: 25%;
-  float: right; }
+  float: right;
+  position: relative; }
   .menu h1 {
     line-height: 10px;
     display: inline-block;
@@ -73,11 +74,15 @@ body {
   .menu button {
     display: block;
     margin: 10px auto;
-    width: 13vw;
+    width: 17vw;
     height: 5.5vh;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     color: #fff; }
+    .menu button:hover {
+      background: #fff;
+      color: #067394;
+      transition: 1s; }
   .menu .social a {
     display: inline-block;
     width: 45px;
@@ -94,5 +99,9 @@ body {
     .menu .social a .fa {
       color: #fff;
       font-size: 30px; }
+
+@media (max-width: 1500px) {
+  .menu {
+    padding: 7vh 30px; } }
 
 /*# sourceMappingURL=style.css.map */
