@@ -50,6 +50,7 @@ body {
 }
 
 .menu {
+	font-size: 2.3vh;
 	background: #067394;
 	height: 100vh;
 	color: #fff;
@@ -61,12 +62,15 @@ body {
 		line-height: 10px;
 		display: inline-block;
 		padding: 0 5px;
+		font-size: 5.7vh;
 	}
 	h3 {
 		margin: 4.8vh auto;
+		font-size: 3.8vh;
 	}
 	h4 {
 		margin-top: 4.8vh;
+		font-size: 3vh;
 	}
 	.photo {
 		background-image: url('../images/face.jpg');;
@@ -79,18 +83,23 @@ body {
 		border-radius: 50%;
 		box-shadow: 0 0 25px 5px #fff;
 	}
+	a {
+		text-decoration: none;
+	}
 	button {
 		display: block;
 		margin: 10px auto;
 		width: 17vw;
 		height: 5.5vh;
-		background: rgba(0,0,0,0.1);
+		background: rgba(0,0,0,0.2);
 		border-radius: 20px;
 		color: #fff;
+		font-weight: 700;
 		&:hover {
 			background: #fff;
 			color: #067394;
 			transition: 1s;
+			border: none;
 		}
 	}
 	.social {
