@@ -113,7 +113,7 @@ body {
 	}
 	h4 {
 		margin-top: 4.8vh;
-		font-size: 3vh;
+		font-size: 2.8vh;
 	}
 	.photo {
 		background-image: url('../images/face.jpg');;
@@ -125,6 +125,10 @@ body {
 		border: 2px solid #ccc;
 		border-radius: 50%;
 		box-shadow: 0 0 25px 5px #fff;
+		&:hover {
+			transform: rotate(720deg);
+			transition: 3s;
+		}
 	}
 	a {
 		text-decoration: none;
@@ -171,7 +175,102 @@ body {
 	}
 }
 
-@media (max-width: 1500px) {
+.page {
+	background: #B3DAF5;
+	padding: 10px 50px;
+	text-align: left;
+	color: #032F3D;
+	h1 {
+		font-family: 'Indie Flower', cursive;
+		font-size: 60px;
+		font-weight: 700;
+		margin-left: 40px;
+	}
+	.hr {
+		height: 4px;
+		width: 100%;
+		border-radius: 2px;
+		background: #032F3D;
+	}
+	.content-page {
+		margin: 30px 20px;
+		width: calc(100% - 60px);
+		text-align: justify;
+	}
+	fieldset {
+		padding: 0 80px 20px;
+		
+		border: 3px solid #032F3D;
+		border-radius: 20px;
+		legend {
+			width:inherit;
+			padding:0 10px;
+			border-bottom:none;
+		}
+	}
+}
+
+.page1 {
+	img {
+		height: 50px;
+		display: inline-block;
+		padding: 0 0 5px 5px;
+	}
+	.big {
+		height: 65px;
+	}
+	.small {
+		height: 40px;
+	}
+	.very-small {
+		height: 20px;
+		margin-top: 20px;
+	}
+}
+
+.page2 {
+	background: #B3CEF5;
+	.nav-tabs {
+		background: #04556E;
+		color: #fff;
+		width: 400px;
+		.active {
+			background: #032F3D;
+			border: none;
+			border-bottom: 3px solid red;
+		}
+	}
+}
+
+.page3 {
+	background: #B3C4F5;
+	textarea, input {
+		resize: none;
+		background: #cddeff;
+	}
+	button {
+		background: #04556E;
+		border: 1px solid #04556E;
+		color: #fff;
+		display: block;
+		font-size: 1em;
+		height: 40px;
+		line-height: 30px;
+		margin: 40px auto 20px;
+		outline: 1px solid #04556E;
+		outline-offset: 0;
+		text-transform: uppercase;
+		padding: 0 15px;
+		&:hover {
+			box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5), 0 0 20px rgba(60, 60, 60, 0.2);
+			outline-color: #B3C4F5;
+			outline-offset: 15px;
+			transition: 0.5s;
+		}
+	}
+}
+
+@media (max-width: 1576px) {
 	.menu {
 		padding: 7vh 30px;
 	}
