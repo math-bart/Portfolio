@@ -143,21 +143,51 @@ body {
 	a {
 		text-decoration: none;
 	}
-	button {
-		display: block;
-		margin: 10px auto;
-		width: 17vw;
-		height: 5.5vh;
-		background: rgba(0,0,0,0.2);
-		border-radius: 20px;
-		color: #fff;
-		font-weight: 700;
-		
-		&:hover {
-			background: #fff;
-			color: #067394;
-			transition: 1s;
+	.onepage-pagination {
+		position: static;
+		height: 20vh;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+		* {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+		}
+		li {
+			display: block;
+			position: static;
+		}
+		li a {
+			display: block;
+			margin: 10px auto 0;
+			height: 5.5vh;
+			position: static;
+		}
+		li a:before {
+			position: static;
+			background: transparent;
+			border: none;	
+		}
+		li a.active:before {
+			background: transparent;
 			border: none;
+		}
+		button {
+			display: block;
+			margin: 10px auto;
+			width: 17vw;
+			height: 5.5vh;
+			background: rgba(0,0,0,0.2);
+			border-radius: 20px;
+			color: #fff;
+			font-weight: 700;
+			&:hover {
+				background: #fff;
+				color: #067394;
+				transition: 1s;
+				border: none;
+			}
 		}
 	}
 	.social {
@@ -195,6 +225,7 @@ body {
 		font-size: 10vh;
 		font-weight: 700;
 		margin-left: 40px;
+		animation: zoomInUp 3s;
 	}
 	.hr {
 		height: 4px;

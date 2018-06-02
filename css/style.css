@@ -123,20 +123,45 @@ body {
       transition: 3s; }
   .menu a {
     text-decoration: none; }
-  .menu button {
-    display: block;
-    margin: 10px auto;
-    width: 17vw;
-    height: 5.5vh;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    color: #fff;
-    font-weight: 700; }
-    .menu button:hover {
-      background: #fff;
-      color: #067394;
-      transition: 1s;
+  .menu .onepage-pagination {
+    position: static;
+    height: 20vh;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%; }
+    .menu .onepage-pagination * {
+      padding: 0;
+      margin: 0;
+      width: 100%; }
+    .menu .onepage-pagination li {
+      display: block;
+      position: static; }
+    .menu .onepage-pagination li a {
+      display: block;
+      margin: 10px auto 0;
+      height: 5.5vh;
+      position: static; }
+    .menu .onepage-pagination li a:before {
+      position: static;
+      background: transparent;
       border: none; }
+    .menu .onepage-pagination li a.active:before {
+      background: transparent;
+      border: none; }
+    .menu .onepage-pagination button {
+      display: block;
+      margin: 10px auto;
+      width: 17vw;
+      height: 5.5vh;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      color: #fff;
+      font-weight: 700; }
+      .menu .onepage-pagination button:hover {
+        background: #fff;
+        color: #067394;
+        transition: 1s;
+        border: none; }
   .menu .social a {
     display: inline-block;
     width: 45px;
@@ -163,7 +188,8 @@ body {
     font-family: 'Indie Flower', cursive;
     font-size: 10vh;
     font-weight: 700;
-    margin-left: 40px; }
+    margin-left: 40px;
+    animation: zoomInUp 3s; }
   .page .hr {
     height: 4px;
     width: 100%;
