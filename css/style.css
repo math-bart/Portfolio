@@ -76,7 +76,12 @@ body {
   .menu .shadow-2 {
     left: -200px;
     top: 360px;
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.3);
+    text-align: left; }
+    .menu .shadow-2 span {
+      margin-left: 330px;
+      color: rgba(255, 255, 255, 0.5);
+      display: block; }
   .menu .shadow-3 {
     left: -200px;
     top: 550px;
@@ -169,7 +174,7 @@ body {
     width: calc(100% - 60px);
     text-align: justify; }
   .page fieldset {
-    padding: 0 80px 20px;
+    padding: 30px 80px 20px;
     border: 3px solid #032F3D;
     border-radius: 20px; }
     .page fieldset legend {
@@ -323,20 +328,26 @@ body {
 .mockup-8 {
   background-image: url("../images/guess.PNG"); }
 
-.page3 textarea, .page3 input {
+.page3 textarea {
   resize: none;
-  background: #B3DAF5; }
+  background: #B3DAF5;
+  height: 37.3vh;
+  font-size: 2.5vh; }
+.page3 input {
+  background: #B3DAF5;
+  height: 6.5vh;
+  font-size: 2.5vh; }
 .page3 button {
   background: #04556E;
   border: 1px solid #04556E;
   color: #fff;
   display: block;
-  font-size: 1em;
-  height: 40px;
-  line-height: 30px;
+  font-size: 2.5vh;
+  height: 7vh;
+  line-height: 5vh;
   margin: 40px auto 20px;
   text-transform: uppercase;
-  padding: 0 15px; }
+  padding: 0 30px; }
   .page3 button:hover {
     box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5), 0 0 20px rgba(60, 60, 60, 0.2);
     transform: scale(1.2);
@@ -345,6 +356,9 @@ body {
 @media (max-width: 1576px) {
   .menu {
     padding: 7vh 30px; }
+
+  .page fieldset {
+    padding: 0 80px 20px; }
 
   .page1 img {
     height: 50px; }
