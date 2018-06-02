@@ -1,3 +1,6 @@
+* {
+  outline: 0; }
+
 body {
   background: #E2E4E7;
   padding: 0;
@@ -188,6 +191,8 @@ body {
   .page1 .very-small {
     height: 20px;
     margin-top: 20px; }
+  .page1 p {
+    font-size: 2.3vh; }
 
 .page2 .nav-tabs {
   background: transparent;
@@ -294,28 +299,28 @@ body {
       display: block; }
 
 .mockup-1 {
-  background-image: url("../images/Awax.png"); }
+  background-image: url("../images/Awax.PNG"); }
 
 .mockup-2 {
-  background-image: url("../images/Mache.png"); }
+  background-image: url("../images/Mache.PNG"); }
 
 .mockup-3 {
-  background-image: url("../images/Golden.png"); }
+  background-image: url("../images/Golden.PNG"); }
 
 .mockup-4 {
-  background-image: url("../images/PhotoApp.png"); }
+  background-image: url("../images/PhotoApp.PNG"); }
 
 .mockup-5 {
-  background-image: url("../images/sudoku.png"); }
+  background-image: url("../images/sudoku.PNG"); }
 
 .mockup-6 {
-  background-image: url("../images/tic.png"); }
+  background-image: url("../images/tic.PNG"); }
 
 .mockup-7 {
-  background-image: url("../images/papier.png"); }
+  background-image: url("../images/papier.PNG"); }
 
 .mockup-8 {
-  background-image: url("../images/guess.png"); }
+  background-image: url("../images/guess.PNG"); }
 
 .page3 textarea, .page3 input {
   resize: none;
