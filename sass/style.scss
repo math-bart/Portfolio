@@ -1,5 +1,6 @@
 * {
 	outline: 0;
+	user-select: none;
 }
 
 body {
@@ -780,7 +781,7 @@ body {
 				width: 17vw;
 				min-width: 200px;
 				height: 6vh;
-				min-height: 35px;
+				min-height: 30px;
 			}
 		}
 	}
@@ -847,7 +848,7 @@ body {
 	#menu-wrapper {
 		height: 45px;
 		.photo {
-			margin: 50px auto 6vh;
+			margin: 50px auto 2vh;
 		}
 	}
 	.page {
@@ -1050,7 +1051,7 @@ body {
 			width: 100%; 
 		}
 		textarea {
-			height: 30vh;
+			height: 15vh;
 			font-size: 2vh;
 			width: 100%;
 		}
