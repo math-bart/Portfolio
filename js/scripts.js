@@ -15,7 +15,10 @@ $(".main").onepage_scroll({
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 });
 
+
+
 $(function() {
+  $( ".title" ).toggleClass("animation");
   $("#menu-wrapper #hamburger-menu").click(function(event) {
     event.stopPropagation();
 	$("#menu-wrapper").toggleClass("full-height");
@@ -25,4 +28,5 @@ $(function() {
 	$("#menu-wrapper").removeClass("full-height");
 	$("#hamburger-menu").removeClass("open");
   });
+ 
 });   

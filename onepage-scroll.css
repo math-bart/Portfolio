@@ -99,10 +99,9 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     width: 100%;
 	max-width: 100%;
     cursor: pointer;
-	background: #FF5722;
 	height: 75px;
 	position: fixed;
-	background: #067394;
+	
 	color: #fff;
 	z-index: 1;
 	text-align: center;

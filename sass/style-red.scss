@@ -1,8 +1,9 @@
-$color-main: #067394;
-$color-light: #B3DAF5;
-$color-medium: #04556E;
-$color-dark: #032F3D;
-$color-special: #CC1E41;
+$color-main: #54b50a;
+$color-light: #aaea88;
+$color-medium: #3b7703;
+$color-dark: #194203;
+$color-special: #067394;
+
 
 * {
 	outline: 0;
@@ -18,6 +19,10 @@ body {
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
 } 
+
+.change-img {
+	content: url('../images/bg-carousel-red.png');	
+}
 
 .animation {
 	animation: zoomInUp 3s;
@@ -603,19 +608,11 @@ body {
 		height: 37.5vh;
 		font-size: 2.5vh;
 		width: 100%;
-		color: $color-dark;
-		&::placeholder { 
-			color: $color-dark;
-		}
 	}
 	input {
 		background: $color-light;
 		height: 6.5vh;
 		font-size: 2.5vh;
-		color: $color-dark;
-		&::placeholder { 
-			color: $color-dark;
-		}
 	}
 	button {
 		background: $color-medium;
