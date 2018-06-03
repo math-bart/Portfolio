@@ -466,6 +466,24 @@ body {
 .mockup-8 {
   background-image: url("../images/guess.png"); }
 
+.page3 form input[type="text"]:valid, .page3 form input[type="email"]:valid, .page3 form input[type="topic"]:valid {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px; }
+.page3 form input[type="text"]:invalid:not(:focus):not(:placeholder-shown), .page3 form input[type="email"]:invalid:not(:focus):not(:placeholder-shown), .page3 form input[type="topic"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink; }
+.page3 form input[type="text"]:invalid:focus:not(:placeholder-shown) ~ .requirements, .page3 form input[type="email"]:invalid:focus:not(:placeholder-shown) ~ .requirements, .page3 form input[type="topic"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: 200px;
+  padding: 0 30px 20px 50px; }
+.page3 form .requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  transition: 0.28s;
+  overflow: hidden;
+  color: red;
+  font-style: italic; }
 .page3 textarea {
   resize: none;
   background: #B3DAF5;
@@ -475,7 +493,8 @@ body {
 .page3 input {
   background: #B3DAF5;
   height: 6.5vh;
-  font-size: 2.5vh; }
+  font-size: 2.5vh;
+  padding-left: 40px; }
 .page3 button {
   background: #04556E;
   border: 1px solid #04556E;

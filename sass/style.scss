@@ -588,6 +588,37 @@ body {
 }
 
 .page3 {
+	form {
+		input[type="text"], input[type="email"], input[type="topic"] {
+			&:valid {
+				background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+				background-size: 20px;
+				background-repeat: no-repeat;
+				background-position: 10px 10px;
+			}
+      
+			&:invalid:not(:focus):not(:placeholder-shown) {
+				background: pink;
+			}
+			&:invalid:focus:not(:placeholder-shown) {
+				& ~ .requirements {
+					  max-height: 200px;
+					  padding: 0 30px 20px 50px;
+				}
+			}
+		}
+		.requirements {
+		  padding: 0 30px 0 50px;
+		  color: #999;
+		  max-height: 0;
+		  transition: 0.28s;
+		  overflow: hidden;
+		  color: red;
+		  font-style: italic;
+		}
+		
+    }
+
 	textarea {
 		resize: none;
 		background: #B3DAF5;
@@ -599,6 +630,7 @@ body {
 		background: #B3DAF5;
 		height: 6.5vh;
 		font-size: 2.5vh;
+		padding-left: 40px;
 	}
 	button {
 		background: #04556E;
