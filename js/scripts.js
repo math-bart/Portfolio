@@ -20,6 +20,9 @@ $(function() {
     event.stopPropagation();
 	$("#menu-wrapper").toggleClass("full-height");
 	$("#hamburger-menu").toggleClass("open");
-    $("body").toggleClass("overflow-hidden");
+  });
+  $(".onepage-pagination li a button").click(function(event) {
+	$("#menu-wrapper").removeClass("full-height");
+	$("#hamburger-menu").removeClass("open");
   });
 });   

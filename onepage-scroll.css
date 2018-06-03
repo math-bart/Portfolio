@@ -114,6 +114,10 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 	 transition: .8s ease-in-out;
 }
 
+#menu-wrapper.small-height {
+	height: 75px;
+	 transition: .8s ease-in-out;
+}
 
 #menu-wrapper #hamburger-menu {
     position: relative;

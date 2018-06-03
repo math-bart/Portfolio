@@ -28,7 +28,7 @@ body {
 		height: 150px;
 		width: 3000px;
 		z-index: 0;
-		left: -500px;
+		left: -700px;
 		transform: rotate(45deg); 
 	}
 	.shadow-0 {
@@ -48,7 +48,7 @@ body {
 		background: rgba(0, 0, 0, 0.4);
 		text-align: left;
 		span {
-			margin-left: 230px;
+			margin-left: 1230px;
 			color: rgba(255, 255, 255, 0.5);
 			display: block;
 		}
@@ -570,16 +570,16 @@ body {
 	background-image: url('../images/PhotoApp.PNG');
 }
 .mockup-5 {
-	background-image: url('../images/sudoku.PNG');
+	background-image: url('../images/sudoku.png');
 }
 .mockup-6 {
-	background-image: url('../images/tic.PNG');
+	background-image: url('../images/tic.png');
 }
 .mockup-7 {
-	background-image: url('../images/papier.PNG');
+	background-image: url('../images/papier.png');
 }
 .mockup-8 {
-	background-image: url('../images/guess.PNG');
+	background-image: url('../images/guess.png');
 }
 
 .page3 {
@@ -698,18 +698,18 @@ body {
 	}
 	.page1 {
 		img {
-			height: 25px;
+			height: 3.2vw;
 			padding: 0 0 5px 0;
 		}
 		.big {
-			height: 34px;
+			height: 4.5vw;
 		}
 		.small {
-			height: 22px;
+			height: 3vw;
 		}
 		.very-small {
-			height: 11px;
-			margin-top: 8px;
+			height: 1.4vw;
+			margin-top: 1.3vw;
 		}
 		p {
 			font-size: 2.7vh;
@@ -720,6 +720,9 @@ body {
 		h1, .hr {
 			display: none;
 		}
+		.change-img {
+			content: url('../images/bg-carousel-panorama.png');	
+		}
 		.carousel-caption {
 			fieldset {
 				padding: 0 5px 10px;
@@ -728,6 +731,13 @@ body {
 					width: 100%;
 					}
 			}	
+			.col {
+				.layer {
+					.ico {
+						margin-top: 50px;
+					}
+				}
+			}
 			.description {
 				span {
 					font-size: 10px;
@@ -744,6 +754,153 @@ body {
 	.page3 {
 		button {
 			margin: 15px auto 10px;
+		}
+	}
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+	.onepage-pagination {
+	  left: 0;
+	}
+	.onepage-pagination li a {
+	  padding: 7px;
+	  width: 2px;
+	  height: 2px;  
+	}
+	.onepage-pagination li a:before{
+	  width: 4px;
+	  height: 4px;
+	}
+	.onepage-pagination li a.active:before{
+	  width: 5px;
+	  height: 5px;
+	  margin-top: -1px;
+	  left: 6px;
+	}
+	
+	
+	#menu-wrapper {
+		height: 45px;
+	}
+	#menu-wrapper #hamburger-menu {
+		width: 25px;
+		height: 20px;
+		margin: 15px;
+	}
+	#menu-wrapper #hamburger-menu span {
+		height: 2px;
+		border-radius: 10px;
+		position: absolute;
+	}
+	#menu-wrapper #hamburger-menu span:nth-child(1) {
+		top: 0;
+	}
+	#menu-wrapper #hamburger-menu span:nth-child(2) {
+		top: 9px;
+	}
+	#menu-wrapper #hamburger-menu span:nth-child(3) {
+		top: 18px;
+	}
+	#menu-wrapper #hamburger-menu.open span:nth-child(1) {
+		top: 9px;
+	}
+	#menu-wrapper #hamburger-menu.open span:nth-child(3) {
+		top: 9px;
+	}
+	#menu-wrapper {
+		h1 {
+			line-height: 10px;
+			font-size: 30px; 
+			margin-left: 15px;
+		}
+		h2 {
+			line-height: 10px;
+			font-size: 30px; 
+			margin-right: 15px;
+		}
+	}
+	.page {
+		padding: 35px 20px;
+		fieldset {
+			padding: 0 5px 4px;
+			legend {
+				font-size: 4vh;
+				margin-bottom: 4px;
+			}
+		}
+	}
+	.page1 {
+		.content-page {
+			margin: 10px 10px;
+			width: calc(100% - 20px);
+		}
+		img.es6 {
+			display: none;
+		}
+	}
+	.page2 {
+		.carousel-caption {
+			margin-top: 20px;
+			width: 90%;
+			.col {
+				.mockup {
+					background-position: 50% 40%; 
+				}
+			}
+			.description {
+				img {
+					width: 17px;
+				}
+				.big {
+					width: 42px;
+				}
+			}
+		}
+		.content-page {
+			margin: 20px 10px 10px;
+			width: 100%;
+		}
+		.nav-tabs {
+			border: none;
+			* {
+				font-size: 9px;
+				
+			}
+			li a {
+				padding: 2px 5px;
+			}
+			li.active a {
+				border-bottom: 3px solid #CC1E41;
+				padding: 2px 5px;
+			}
+		
+		}
+		.glyphicon {
+			width: 25px;
+			height: 25px;
+			line-height: 25px;
+			font-size: 12px;
+		}
+		.glyphicon-chevron-left {
+			left: 12px;
+		}
+		.glyphicon-chevron-right {
+			right: 12px;
+		}
+		.carousel-control {
+			width: 30px;
+		}
+	}
+	.page3 {
+		.form-group {
+			margin: 5px 0;
+		}
+		.content-page {
+			margin: 10px 0;
+			width: 100%; 
+		}
+		button {
+			margin: 15px auto 0;
 		}
 	}
 }
