@@ -434,7 +434,7 @@ body {
   .page2 .carousel-caption .col {
     position: relative;
     overflow: hidden;
-    height: 22vw;
+    height: 21vw;
     padding: 0; }
     .page2 .carousel-caption .col .mockup {
       background-position: center;
@@ -756,6 +756,8 @@ body {
       width: 17px; }
     .page2 .carousel-caption .description .big {
       width: 42px; }
+    .page2 .carousel-caption .description .small {
+      width: 10px; }
   .page2 .content-page {
     margin: 20px 10px 10px;
     width: 100%; }

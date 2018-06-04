@@ -544,7 +544,7 @@ body {
 		.col {
 			position: relative;
 			overflow: hidden;
-			height: 22vw;
+			height: 21vw;
 			padding: 0;
 			.mockup {
 				background-position: center;
@@ -977,6 +977,9 @@ body {
 				}
 				.big {
 					width: 42px;
+				}
+				.small {
+					width: 10px;
 				}
 			}
 		}
