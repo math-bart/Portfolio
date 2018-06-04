@@ -1,9 +1,8 @@
-$color-main: #54b50a;
-$color-light: #aaea88;
-$color-medium: #3b7703;
-$color-dark: #194203;
-$color-special: #067394;
-
+$color-main: #bc2c09;
+$color-light: #e8a388;
+$color-medium: #992306;
+$color-dark: #681304;
+$color-special: #032F3D;
 
 * {
 	outline: 0;
@@ -22,6 +21,56 @@ body {
 
 .change-img {
 	content: url('../images/bg-carousel-red.png');	
+}
+
+.style-change {
+	color: #fff;
+	position: fixed;
+	bottom:80px;
+	left: -55px;
+	background: rgba(0,0,0,0.7);
+	width: 430px;
+	height: 30px;
+	z-index: 5;
+	text-align: center;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	transform: rotate(30deg);
+	font-size: 12px;
+	box-shadow: 0 0 25px 3px #fff;
+		.text {
+			display: inline;
+			width: 180px;
+			height: 30px;
+			line-height: 30px;
+		}
+		.color {
+			width: 30px;
+			margin: 5px;
+			display: inline-block;
+			height: 20px;
+			cursor: pointer;
+		}
+		.blue {
+			background: blue;
+		}
+		.red {
+			background: red;
+		}
+		.green {
+			background: green;
+			
+		}
+		button {
+			margin-left: 20px;
+			color: #fff;
+			opacity: 1;
+			&:hover {
+				color: $color-main;
+			}
+		}
+	
 }
 
 .animation {
@@ -371,7 +420,7 @@ body {
 }
 
 .page {
-	background: linear-gradient(to bottom left, $color-light, $color-main);
+	background: linear-gradient(to bottom left, $color-light, #dd6233);
 	padding: 10px 50px;
 	text-align: left;
 	color: $color-dark;
@@ -407,7 +456,7 @@ body {
 }
 
 .page1 {
-	background: linear-gradient(to bottom left, $color-light, $color-main);
+	background: linear-gradient(to bottom left, $color-light, #dd6233);
 	img {
 		height: 75px;
 		display: inline-block;
@@ -608,11 +657,19 @@ body {
 		height: 37.5vh;
 		font-size: 2.5vh;
 		width: 100%;
+		color: $color-dark;
+		&::placeholder { 
+			color: $color-dark;
+		}
 	}
 	input {
 		background: $color-light;
 		height: 6.5vh;
 		font-size: 2.5vh;
+		color: $color-dark;
+		&::placeholder { 
+			color: $color-dark;
+		}
 	}
 	button {
 		background: $color-medium;
@@ -740,7 +797,7 @@ body {
 			display: none;
 		}
 		.change-img {
-			content: url('../images/bg-carousel-panorama.png');	
+			content: url('../images/bg-carousel-panorama-red.png');	
 		}
 		.carousel-caption {
 			padding-top: 30px;
@@ -993,7 +1050,7 @@ body {
 	}
 	.page2 {
 		.change-img {
-			content: url('../images/bg-carousel-hor.png');	
+			content: url('../images/bg-carousel-hor-red.png');	
 		}
 		.carousel-caption {
 			margin-top: 20px;

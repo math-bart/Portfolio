@@ -28,5 +28,20 @@ $(function() {
 	$("#menu-wrapper").removeClass("full-height");
 	$("#hamburger-menu").removeClass("open");
   });
- 
+  $('.close').click(function(event) {
+    $(".style-change").css('display', 'none');
+  });
+	$("#style-blue").click(function() {
+		 $('link[id="pagestyle"]').attr('href','css/style.css');
+		 console.log('yeach');
+	});
+	$("#style-green").click(function() {
+		 $('link[id="pagestyle"]').attr('href','css/style-gr.css');
+		 console.log('yeach');
+	});
+	$("#style-red").click(function() {
+		 $('link[id="pagestyle"]').attr('href','css/style-red.css');
+		 console.log('yeach');
+	});
+   
 });   
