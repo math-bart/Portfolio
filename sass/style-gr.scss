@@ -1216,3 +1216,12 @@ body {
 		}
 	}
 }
+
+@media (max-width: 400px) and (orientation: landscape) {
+	.page3 {
+		button {
+			font-size: 1.5vw;
+			padding: 3px 5px;
+		}
+	}
+}
