@@ -358,7 +358,8 @@ body {
   background: linear-gradient(to bottom left, #e8a388, #dd6233);
   padding: 10px 50px;
   text-align: left;
-  color: #681304; }
+  color: #681304;
+  overflow: hidden; }
   .page h1 {
     font-family: 'Indie Flower', cursive;
     font-size: 10vh;
@@ -602,6 +603,10 @@ body {
     height: 40px; }
   .page1 .very-small {
     height: 20px; } }
+@media (max-width: 1350px) {
+  .page2 .carousel-caption .description span {
+    font-size: 13px;
+    margin-bottom: 7px; } }
 @media (max-width: 1200px) {
   .menu {
     padding: 3vh 10px; }
@@ -619,10 +624,10 @@ body {
   .page2 .carousel-indicators {
     display: none; }
   .page2 .carousel-caption .description span {
-    font-size: 12px;
-    margin-bottom: 7px; }
+    font-size: 12px; }
   .page2 .carousel-caption .description p {
-    line-height: 13px; } }
+    line-height: 13px;
+    font-size: 16px; } }
 @media (max-width: 991px) {
   .menu {
     display: none; }
